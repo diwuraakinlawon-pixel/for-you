@@ -1,0 +1,55 @@
+.congrats-message{
+    text-align: center;
+    margin-top: 20%;
+    font-family: Arial, sans-serif;
+    color: navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.red-heart::before{
+    content: "❤️";
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: white;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: -10px -10px 30px red;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+.red-heart{
+    font-size: 100px;
+    position: relative;
+    animation: beat 1s linear infinite;
+    transition: rotate 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    background: linear-gradient(to right, pink, lightblue);
+}
